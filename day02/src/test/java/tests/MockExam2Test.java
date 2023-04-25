@@ -23,13 +23,17 @@ public class MockExam2Test {
 
         service = new LoginService();
     }
-    
+
+    private void changeParamter(String key, String value) {
+        given(request.getParameter(key)).willReturn(value);
+    }
+
     @Test
     @DisplayName("로그인 성공시 예외 없음")
     void loginSuccessTest() {
 
         assertDoesNotThrow(() -> {
-
+            service.login(request);
         });
 
     }
@@ -37,6 +41,10 @@ public class MockExam2Test {
     @Test
     @DisplayName("필수 항목 검증(userId, userPw) - 검증 실패시 LoginValidationException")
     void loginTest() {
+        // userId가 null
+        changeParamter("userId", null);
 
+        // userId가 빈 공백
+        changeParamter("userId", "  ");
     }
 }
