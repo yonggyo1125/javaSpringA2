@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7398a09-117c-4ce0-a6bf-0acf59eb6e21" name="Changes" comment="수업 소스">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MockExam2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MockExam2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682401591350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="수업 소스">
+      <created>1682401651504</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682401651504</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

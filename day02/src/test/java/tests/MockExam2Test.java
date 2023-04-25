@@ -6,24 +6,32 @@ import org.junit.jupiter.api.Test;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 
 public class MockExam2Test {
 
     private HttpServletRequest request;
+    private LoginService service;
 
     @BeforeEach
     void init() {
         request = mock(HttpServletRequest.class); // 모의 객체
         given(request.getParameter("userId")).willReturn("user01"); // 스텁
         given(request.getParameter("userPw")).willReturn("12345678");
+
+        service = new LoginService();
     }
     
     @Test
     @DisplayName("로그인 성공시 예외 없음")
     void loginSuccessTest() {
-        
+
+        assertDoesNotThrow(() -> {
+
+        });
+
     }
     
     @Test
