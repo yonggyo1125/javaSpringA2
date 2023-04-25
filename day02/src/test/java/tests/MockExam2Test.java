@@ -55,5 +55,19 @@ public class MockExam2Test {
             changeParamter("userId", "  ");
             service.login(request);
         });
+
+        assertThrows(LoginValidationException.class, () -> {
+            // userPw가 null
+            changeParamter("userId", "user01");
+            changeParamter("userPw", null);
+            service.login(request);
+        });
+
+        assertThrows(LoginValidationException.class, () -> {
+            // userPw가 빈 공백
+            changeParamter("userId", "user01");
+            changeParamter("userPw", "    ");
+            service.login(request);
+        });
     }
 }

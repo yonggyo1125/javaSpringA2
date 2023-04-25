@@ -12,6 +12,9 @@ public class LoginService {
         }
 
         String userPw = request.getParameter("userPw");
+        if (userPw == null || userPw.isBlank()) {
+            throw new LoginValidationException("비밀번호를 입력하세요.");
+        }
     }
 
     public String check(HttpSession session) {
