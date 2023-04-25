@@ -19,7 +19,13 @@ public class MockExam2Test {
         given(request.getParameter("userId")).willReturn("user01"); // 스텁
         given(request.getParameter("userPw")).willReturn("12345678");
     }
-
+    
+    @Test
+    @DisplayName("로그인 성공시 예외 없음")
+    void loginSuccessTest() {
+        
+    }
+    
     @Test
     @DisplayName("필수 항목 검증(userId, userPw) - 검증 실패시 LoginValidationException")
     void loginTest() {
