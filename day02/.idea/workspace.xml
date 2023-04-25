@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7398a09-117c-4ce0-a6bf-0acf59eb6e21" name="Changes" comment="수업 소스">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginValidationException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MockExam2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MockExam2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,7 @@
     "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MockExam2Test.loginSuccessTest">
+  <component name="RunManager" selected="JUnit.MockExam2Test.loginTest">
     <configuration name="MockExam2Test.loginSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day02" />
       <extension name="coverage">
@@ -57,6 +59,22 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.MockExam2Test" />
       <option name="METHOD_NAME" value="loginSuccessTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockExam2Test.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MockExam2Test" />
+      <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MockExam2Test.loginTest" />
         <item itemvalue="JUnit.MockExam2Test.loginSuccessTest" />
         <item itemvalue="JUnit.MockExamTest.test2" />
         <item itemvalue="JUnit.MockExamTest.test1" />
@@ -146,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682401843870</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="수업 소스">
+      <created>1682402058216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682402058216</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

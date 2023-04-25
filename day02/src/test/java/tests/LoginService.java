@@ -6,7 +6,12 @@ import javax.servlet.http.HttpSession;
 public class LoginService {
 
     public void login(HttpServletRequest request) {
+        String userId = request.getParameter("userId");
+        if (userId == null || userId.isBlank()) {
+            throw new LoginValidationException("아이디를 입력하세요.");
+        }
 
+        String userPw = request.getParameter("userPw");
     }
 
     public String check(HttpSession session) {

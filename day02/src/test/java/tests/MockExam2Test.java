@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import javax.servlet.http.HttpServletRequest;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 
@@ -41,10 +42,18 @@ public class MockExam2Test {
     @Test
     @DisplayName("필수 항목 검증(userId, userPw) - 검증 실패시 LoginValidationException")
     void loginTest() {
-        // userId가 null
-        changeParamter("userId", null);
 
-        // userId가 빈 공백
-        changeParamter("userId", "  ");
+
+        assertThrows(LoginValidationException.class, () -> {
+            // userId가 null
+            changeParamter("userId", null);
+            service.login(request);
+        });
+
+        assertThrows(LoginValidationException.class, () -> {
+            // userId가 빈 공백
+            changeParamter("userId", "  ");
+            service.login(request);
+        });
     }
 }
