@@ -22,4 +22,15 @@ public class Filter1RequestWrapper extends HttpServletRequestWrapper {
         }
 
     }
+
+    @Override
+    public String getParameter(String name) {
+        String value = super.getParameter(name);
+
+        if (value != null) {
+            value = value.toUpperCase();
+        }
+
+        return value;
+    }
 }
