@@ -8,4 +8,12 @@
         <servlet-name>helloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>boardServlet</servlet-name>
+        <servlet-class>controllers.BoardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>boardServlet</servlet-name>
+        <url-pattern>/board</url-pattern>
+    </servlet-mapping>
 </web-app>
