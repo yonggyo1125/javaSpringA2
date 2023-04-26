@@ -14,16 +14,17 @@ public class Filter1 implements Filter {
         // filterChain.doFilter 전 : 요청 전 공통 처리
 
         // 요청 메서드가 post 일때 body 인코딩 UTF-8
+        /** - 사용을 지양
         HttpServletRequest req = (HttpServletRequest) request;
         String method = req.getMethod();
         if (method.toUpperCase().equals("POST")) {
             req.setCharacterEncoding("UTF-8");
         }
+        */
 
-
-        filterChain.doFilter(request, response);
+        filterChain.doFilter(new Filter1RequestWrapper(request), response);
         
         // filterChange.doFilter 후 : 응답 후 공통 처리
-        System.out.println("Filter1 - 후");
+        //System.out.println("Filter1 - 후");
     }
 }
