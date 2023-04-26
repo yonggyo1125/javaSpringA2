@@ -17,7 +17,6 @@
         <url-pattern>/board</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>lifeCycleServlet</servlet-name>
         <servlet-class>controllers.LifeCycleServlet</servlet-class>
@@ -34,4 +33,13 @@
         <servlet-name>lifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>filter1</filter-name>
+        <filter-class>filters.Filter1</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filter1</filter-name>
+        <url-pattern>/board</url-pattern>
+    </filter-mapping>
 </web-app>
