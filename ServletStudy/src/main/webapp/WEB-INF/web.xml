@@ -16,4 +16,14 @@
         <servlet-name>boardServlet</servlet-name>
         <url-pattern>/board</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>lifeCycleServlet</servlet-name>
+        <servlet-class>controllers.LifeCycleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lifeCycleServlet</servlet-name>
+        <url-pattern>/life</url-pattern>
+    </servlet-mapping>
 </web-app>
