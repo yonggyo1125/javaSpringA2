@@ -17,6 +17,7 @@ public class BoardServlet extends HttpServlet {
         out.print("내용 : <textarea name='content'></textarea><br>");
         out.print("<button type='submit'>작성하기</button>");
         out.print("</form>");
+        System.out.println("doGet() - Board");
     }
 
     @Override
