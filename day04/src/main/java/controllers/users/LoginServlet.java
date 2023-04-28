@@ -30,6 +30,7 @@ public class LoginServlet extends HttpServlet {
         service.login(userId, userPw);
 
         // View - 처리 결과 응답(jsp)
+        req.setAttribute("message", "로그인 성공!");
         RequestDispatcher rd = req.getRequestDispatcher("/user/login_done.jsp");
         rd.forward(req, resp);
     }

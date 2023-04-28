@@ -1,2 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" %>
-로그인 성공!
+<%
+    //String message = (String)request.getAttribute("message");
+    //out.write(message);
+%>
+${message}
