@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fd58418-ab2a-490f-8350-5f135a77863d" name="Changes" comment="수업 소스">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/forward.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/target.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action2/ex01.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action2/ex02.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action2/ex03.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action2/ex04.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action2/forward.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/action2/include.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ex05.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ex06.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ex07.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ex08.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/users/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/users/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ex04.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ex04.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/action2/ex03.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/action2/ex03.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/action2/include.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/action2/include.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682581971523</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="수업 소스">
+      <created>1682659396658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682659396658</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
