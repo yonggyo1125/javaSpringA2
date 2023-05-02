@@ -5,17 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4667f1b1-5b42-4828-a370-295e99c1911b" name="Changes" comment="수업 소스">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex06.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex01.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex02.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex03.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/BoardListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex04.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex05.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex06.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex07.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/el/ex04.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/el/ex04.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jstl/ex03.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex03.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -93,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683006689355</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="수업 소스">
+      <created>1683010246804</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683010246804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
