@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4667f1b1-5b42-4828-a370-295e99c1911b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/java/controllers/board/BoardViewServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/java/models/board/BoardData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/webapp/WEB-INF/tags/line.tag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/webapp/action2/ex09.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/webapp/action2/ex10.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/webapp/board/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day04/src/main/webapp/el/ex01.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex01.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex02.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex03.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex04.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex05.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day04/src/main/java/models/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day04/src/main/java/models/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day04/src/main/webapp/action2/ex08.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../day04/src/main/webapp/action2/ex08.jsp" afterDir="false" />
+    <list default="true" id="4667f1b1-5b42-4828-a370-295e99c1911b" name="Changes" comment="수업 소스">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/el/ex06.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex03.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/el/ex04.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/el/ex04.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +86,18 @@
       <option name="presentableId" value="Default" />
       <updated>1683003929016</updated>
     </task>
+    <task id="LOCAL-00001" summary="수업 소스">
+      <created>1683006689355</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683006689355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="수업 소스" />
+    <option name="LAST_COMMIT_MESSAGE" value="수업 소스" />
   </component>
 </project>
