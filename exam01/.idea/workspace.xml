@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4667f1b1-5b42-4828-a370-295e99c1911b" name="Changes" comment="수업 소스">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages/commons_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages/commons_ko.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex19.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex20.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex21.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jstl/ex22.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/line.tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/line2.tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/custom/ex01.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683096686278</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="수업 소스">
+      <created>1683100542143</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683100542143</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
