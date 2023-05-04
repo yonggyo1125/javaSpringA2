@@ -1,5 +1,7 @@
-<%@ tag body-content="scriptless" %>
+<%@ tag body-content="tagdependent" %>
+<%@ tag pageEncoding="UTF-8" %>
 <%@ tag trimDirectiveWhitespaces="true" %>
-<div style="border: 1px dashed black; padding: 20px;">
+<%@ attribute name="color" %>
+<div style="border: 1px dashed ${color}; padding: 20px;">
     <jsp:doBody />
 </div>

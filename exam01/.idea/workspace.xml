@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4667f1b1-5b42-4828-a370-295e99c1911b" name="Changes" comment="수업 소스">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/box.tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/max.tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/min.tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/custom/ex03.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tdd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tdd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/box.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/box.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/custom/ex02.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/custom/ex02.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683104290532</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="수업 소스">
+      <created>1683177631682</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683177631682</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
