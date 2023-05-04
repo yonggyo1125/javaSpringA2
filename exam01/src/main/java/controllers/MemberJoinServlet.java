@@ -15,8 +15,8 @@ import java.util.List;
 public class MemberJoinServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String[] addCss = { "member/join.css", "member/calendar.css"};
-        List<String> addScript = Arrays.asList("member/join.js", "file/upload.js");
+        String[] addCss = { "member/join", "member/calendar"};
+        List<String> addScript = Arrays.asList("member/join", "file/upload");
 
         req.setAttribute("addCss", addCss);
         req.setAttribute("addScript", addScript);
