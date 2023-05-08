@@ -1,11 +1,18 @@
 package models.member;
 
+import validators.Validator;
+
 import javax.servlet.http.HttpServletRequest;
 
 public class LoginService {
+
+    private Validator<HttpServletRequest> validator;
+
+    public LoginService(Validator<HttpServletRequest> validator) {
+        this.validator = validator;
+    }
+
     public void login(HttpServletRequest request) {
-        String userId = request.getParameter("userId");
-        String userPw = request.getParameter("userPw");
-        System.out.printf("userId=%s, userPw=%s%n", userId, userPw);
+        validator.check(request);
     }
 }
