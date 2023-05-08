@@ -9,6 +9,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -25,7 +26,11 @@ public class MemberLoginTest {
     @Mock
     private HttpServletRequest request;
 
+    @Mock
+    private HttpSession session;
+
     private Member member; // 실제 가입 회원
+
 
     @BeforeEach
     void init() {
@@ -50,6 +55,9 @@ public class MemberLoginTest {
     private void createSuccessData() {
         given(request.getParameter("userId")).willReturn(member.getUserId());
         given(request.getParameter("userPw")).willReturn(member.getUserPw());
+        given(request.getSession()).willReturn(session);
+        given(session.getAttribute("member")).willReturn(member);
+
     }
 
     private void createWrongData(String userId, String userPw) {
@@ -108,15 +116,23 @@ public class MemberLoginTest {
                         createWrongData("user02", member.getUserPw());
                         loginService.login(request);
                     });
+
+                    String message = thrown.getMessage();
+                    assertTrue(message.contains("가입되지 않은 회원"));
                 }
         );
-
-
-
-
-
-
     }
 
 
+    @Test
+    @DisplayName("가입한 회원의 비밀번호가 일치하지 않는 경우 - LoginValidationException 발생, 아이디 또는 비밀번호가 일치하지 않습니다.")
+    void loginPasswordTest() {
+        LoginValidationException thrown = assertThrows(LoginValidationException.class, () -> {
+            createWrongData(member.getUserId(), "1234");
+            loginService.login(request);
+        });
+
+        String message = thrown.getMessage();
+        assertTrue(message.contains("아이디 또는 비밀번호가 일치하지"));
+    }
 }

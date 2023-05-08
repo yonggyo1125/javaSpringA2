@@ -19,6 +19,5 @@ public class JoinService {
         // 가입 처리
         memberDao.insert(member);
 
-
     }
 }

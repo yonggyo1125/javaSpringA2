@@ -26,5 +26,9 @@ public class LoginValidator implements Validator<HttpServletRequest> {
             throw new LoginValidationException("가입되지 않은 회원입니다.");
         }
 
+        /** 비밀번호 일치여부 체크 */
+        if (!userPw.equals(member.getUserPw())) {
+            throw new LoginValidationException("아이디 또는 비밀번호가 일치하지 않습니다.");
+        }
     }
 }
