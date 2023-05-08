@@ -4,6 +4,7 @@ import validators.Validator;
 
 public class ServiceManager {
     public MemberDao memberDao() {
+
         return new UpgradedMemberDao();
     }
 
@@ -15,14 +16,17 @@ public class ServiceManager {
     }
 
     public LoginValidator loginValidator() {
+
         return new LoginValidator(memberDao());
     }
 
     public JoinService getJoinService() {
+
         return new JoinService(joinValidator(), memberDao());
     }
 
     public LoginService getLoginService() {
+
         return new LoginService(loginValidator(), memberDao());
     }
 }
