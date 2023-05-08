@@ -1,5 +1,8 @@
 package controllers.members;
 
+import models.member.JoinService;
+import validators.Validator;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,6 +23,6 @@ public class JoinServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        //JoinService service = new JoinService(new Validator<>())
     }
 }
