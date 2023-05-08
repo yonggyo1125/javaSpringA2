@@ -29,9 +29,10 @@ public class MemberLoginTest {
 
     @BeforeEach
     void init() {
-        loginService = new LoginService(new LoginValidator());
-
         MemberDao memberDao = new MemberDao();
+
+        loginService = new LoginService(new LoginValidator(memberDao));
+
         JoinValidator joinValidator = new JoinValidator();
         joinValidator.setMemberDao(memberDao);
         joinService = new JoinService(joinValidator, memberDao);
@@ -47,8 +48,8 @@ public class MemberLoginTest {
     }
 
     private void createSuccessData() {
-        given(request.getParameter("userId")).willReturn("user01");
-        given(request.getParameter("userPw")).willReturn("12345678");
+        given(request.getParameter("userId")).willReturn(member.getUserId());
+        given(request.getParameter("userPw")).willReturn(member.getUserPw());
     }
 
     private void createWrongData(String userId, String userPw) {
@@ -71,22 +72,22 @@ public class MemberLoginTest {
         assertAll(
                 // userId가 null 값
                 () -> assertThrows(LoginValidationException.class, () -> {
-                    createWrongData(null, "12345678");
+                    createWrongData(null, member.getUserPw());
                     loginService.login(request);
                 }),
                 // userId가 빈 값
                 () -> assertThrows(LoginValidationException.class, () -> {
-                    createWrongData("    ", "12345678");
+                    createWrongData("    ", member.getUserPw());
                     loginService.login(request);
                 }),
                 // userPw가 null 값
                 () -> assertThrows(LoginValidationException.class, () -> {
-                    createWrongData("user01", null);
+                    createWrongData(member.getUserId(), null);
                     loginService.login(request);
                 }),
                 // userPw가 빈 값
                 () -> assertThrows(LoginValidationException.class, () -> {
-                    createWrongData("user01", "     ");
+                    createWrongData(member.getUserId(), "     ");
                     loginService.login(request);
                 })
         );
@@ -95,11 +96,24 @@ public class MemberLoginTest {
     @Test
     @DisplayName("등록되지 않은 아이디로 로그인시 LoginValidationException 발생, 예외 메세지 - 가입되지 않은 회원입니다")
     void loginMemberExistsTest() {
-        // 회원 가입
+        assertAll(
+                // 회원 가입 계정으로 로그인시 오류 없음
+                () -> assertDoesNotThrow(() -> {
+                    createSuccessData();
+                    loginService.login(request);
+                }),
+                () -> {
+                    // 가입 계정과 다른 계정으로 로그인 오류 발생
+                    LoginValidationException thrown = assertThrows(LoginValidationException.class, () -> {
+                        createWrongData("user02", member.getUserPw());
+                        loginService.login(request);
+                    });
+                }
+        );
 
-        // 회원 가입 계정으로 로그인시 오류 없음
 
-        // 가입 계정과 다른 계정으로 로그인 오류 발생
+
+
 
 
     }
