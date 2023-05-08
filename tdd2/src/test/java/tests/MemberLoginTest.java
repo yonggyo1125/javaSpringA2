@@ -31,32 +31,34 @@ public class MemberLoginTest {
 
     private Member member; // 실제 가입 회원
 
-
     @BeforeEach
     void init() {
         MemberDao memberDao = new MemberDao();
 
-        loginService = new LoginService(new LoginValidator(memberDao));
+        loginService = new LoginService(new LoginValidator(memberDao), memberDao);
 
         JoinValidator joinValidator = new JoinValidator();
         joinValidator.setMemberDao(memberDao);
         joinService = new JoinService(joinValidator, memberDao);
 
-        // 회원 가입
-        member = new Member();
-        member.setUserId("user01");
-        member.setUserPw("12345678");
-        member.setUserPwRe("12345678");
-        member.setUserNm("사용자01");
-        joinService.join(member);
 
+        // 회원 가입
+        member = memberDao.get("user01");
+        if (member == null) {
+            member = new Member();
+            member.setUserId("user01");
+            member.setUserPw("12345678");
+            member.setUserPwRe("12345678");
+            member.setUserNm("사용자01");
+            joinService.join(member);
+        }
     }
 
     private void createSuccessData() {
         given(request.getParameter("userId")).willReturn(member.getUserId());
         given(request.getParameter("userPw")).willReturn(member.getUserPw());
         given(request.getSession()).willReturn(session);
-        given(session.getAttribute("member")).willReturn(member);
+        //given(session.getAttribute("member")).willReturn(member);
 
     }
 
